@@ -1,0 +1,72 @@
+# - Rank Cost Configuration -
+
+group1.cost: 1
+group2.cost: 2
+group3.cost: 3
+group4.cost: 4
+group5.cost: 7
+
+# -= Rank Purchase / Fail Configuration =-
+
+group1.complete: §aYou bought it! §e( Edit text at config.yml )
+group1.failed: §cYou failed buying the rank! §e( Edit text at config.yml )
+
+group2.complete: §aYou bought it! §e( Edit text at config.yml )
+group2.failed: §cYou failed buying the rank! §e( Edit text at config.yml )
+
+
+group3.complete: §aYou bought it! §e( Edit text at config.yml )
+group3.failed: §cYou failed buying the rank! §e( Edit text at config.yml )
+
+group4.complete: §aYou bought it! §e( Edit text at config.yml )
+group4.failed: §cYou failed buying the rank! §e( Edit text at config.yml )
+
+group5.complete: §aYou bought it! §e( Edit text at config.yml )
+group5.failed: §cYou failed buying the rank! §e( Edit text at config.yml )
+
+# -= Content Configuration -=
+
+group1.info: Buy this for 1$
+group2.info: Buy this for 2$
+group3.info: Buy this for 3$
+group4.info: Buy this for 4$
+group5.info: Buy this for 5$ 
+
+# -= Others Configuration =-
+ 
+title.rshop: §bRankShop
+
+othermsg1complete.txt: Vip woo 
+othermsg2complete.txt: Vip+ woo
+othermsg3complete.txt: Mvp woo
+othermsg4complete.txt: Mvp+ woo
+othermsg5complete.txt: Goat wooooo
+
+othermsg1fail.txt: Vip woopeh XD
+othermsg2fail.txt: Vip+ woopeh XD
+othermsg3fail.txt: Mvp woopeh XD
+othermsg4fail.txt: Mvp+ woopeh XD
+othermsg5fail.txt: Goat woooopeh XD
+
+purchase1.title: Buyed
+purchase2.title: Buyed
+purchase3.title: Buyed
+purchase4.title: Buyed
+purchase5.title: Buyed
+
+group1.name: Test 1
+group2.name: Test 2
+group3.name: Test 3
+group4.name: Test 4
+group5.name: Test 5
+
+# Features Configuration
+# Shows a list of features of the rank. Edit it here
+
+group1.features: Fly Test
+group2.features: Gamemode
+group3.features: Creative
+group4.features: Kits 
+group5.features: Other
+
+...
