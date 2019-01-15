@@ -1,10 +1,10 @@
 name: RankShopSystem
-version: 1.0.5
+version: 1.0.0
 main: RankShopSystem\Main
 api: [3.0.0, 3.1.0, 4.0.0]
 author: zZPROGAMERZz423 | §eFor issues report by §2Visiting GitHub.com/zZPROGAMERZz423
 
 depend: [PureChat, FormAPI, PurePerms, FormAPI, EconomyAPI]
 commands:
-rshop:
-description: "A rank shop system established for servers"
+  rshop:
+   description: "A rank shop system established for servers"
