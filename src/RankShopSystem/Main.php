@@ -63,7 +63,7 @@ class Main extends PluginBase implements Listener {
                         break;
                     case 5:
                     $this->group5($sender);
-            $sender->setNameTag($sender->getNameTag() . "§r");
+            $sender->setNameTag($sender->getNameTag() . "§aBUYER");
                         break;                    
             }
         });
