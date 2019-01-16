@@ -13,6 +13,7 @@ use jojoe77777\FormAPI;
 use pocketmine\Player;
 use pocketmine\Server;
 use RankShopSystem\Main;
+
 class Main extends PluginBase implements Listener {
     
     public function onEnable(){
@@ -363,7 +364,8 @@ $form->setContent($this->getConfig()->get("group5.features"));
         $form->sendToPlayer($sender);
       }
 	
-	public function processor(Player $player, string $string): string{		$string = str_replace("{name}", $player->getName(), $string);
+	public function processor(Player $player, string $string): string{		
+		$string = str_replace("{name}", $player->getName(), $string);
 	return $string;
 	}
 }
