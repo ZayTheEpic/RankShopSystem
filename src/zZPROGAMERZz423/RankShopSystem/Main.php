@@ -1,7 +1,5 @@
 <?php
-
 namespace RankShopSystem;
-
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -15,7 +13,6 @@ use jojoe77777\FormAPI;
 use pocketmine\Player;
 use pocketmine\Server;
 use RankShopSystem\Main;
-
 class Main extends PluginBase implements Listener {
     
     public function onEnable(){
@@ -27,7 +24,6 @@ class Main extends PluginBase implements Listener {
         $this->saveDefaultConfig();
         $this->getResource("config.yml");
     }
-
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args):bool
     {
         switch($cmd->getName()){
@@ -90,7 +86,6 @@ class Main extends PluginBase implements Listener {
             $coins = $this->eco->myMoney($sender);
             $cost = $this->getConfig()->get("group1.cost");
             if($coins >= $cost){
-
                $this->eco->reduceMoney($sender, $cost);	
             $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " .  $sender->getName() . " group1");               
               $sender->getLevel()->addSound(new EndermanTeleportSound($sender));
@@ -129,7 +124,6 @@ $form->setContent($this->getConfig()->get("group1.info"));
             switch ($result) {
                     case 1:
                $sender->sendMessage("§b");
-
             }
         });
         $form->setTitle("§bFeatures");
@@ -227,7 +221,6 @@ $form->setContent($this->getConfig()->get("group5.features"));
             $coins = $this->eco->myMoney($sender);
             $cost = $this->getConfig()->get("group2.cost");
             if($coins >= $cost){
-
                $this->eco->reduceMoney($sender, $cost);
                $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " . "§r" . " group2");
                $sender->sendMessage($this->getConfig()->get("group2.complete"));
@@ -268,7 +261,6 @@ $form->setContent($this->getConfig()->get("group5.features"));
             $coins = $this->eco->myMoney($sender);
             $cost = $this->getConfig()->get("group3.cost");
             if($coins >= $cost){
-
                $this->eco->reduceMoney($sender, $cost);
           $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " .  $sender->getName() . " group3");
                $sender->sendMessage($this->getConfig()->get("group3.complete"));
@@ -307,7 +299,6 @@ $form->setContent($this->getConfig()->get("group5.features"));
             $coins = $this->eco->myMoney($sender);
             $cost = $this->getConfig()->get("group4.cost");
             if($coins >= $cost){
-
                $this->eco->reduceMoney($sender, $cost);
                $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " .  $sender->getName() . " group4");
                $sender->sendMessage($this->getConfig()->get("group4.complete"));
@@ -346,7 +337,6 @@ $form->setContent($this->getConfig()->get("group5.features"));
             $coins = $this->eco->myMoney($sender);
             $cost = $this->getConfig()->get("group5.cost");
             if($coins >= $cost){
-
                $this->eco->reduceMoney($sender, $cost);
 		    $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " .  $sender->getName() . " group5");
                $sender->sendMessage($this->getConfig()->get("group5.complete"));
@@ -376,5 +366,4 @@ $form->setContent($this->getConfig()->get("group5.features"));
 	public function processor(Player $player, string $string): string{		$string = str_replace("{name}", $player->getName(), $string);
 	return $string;
 	}
-
 }
