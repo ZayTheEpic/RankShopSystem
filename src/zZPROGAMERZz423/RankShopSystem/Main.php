@@ -9,7 +9,10 @@ use pocketmine\level\sound\EndermanTeleportSound;
 use pocketmine\level\sound\AnvilFallSound;
 use pocketmine\level\sound\Sound;
 use pocketmine\math\Vector3;
-use jojoe77777\FormAPI;
+use jojoe77777\FormAPI\CustomForm;
+use jojoe77777\FormAPI\ModalForm;
+use jojoe77777\FormAPI\SimpleForm;
+use onebone\economyapi\EconomyAPI;
 use pocketmine\Player;
 use pocketmine\Server;
 
@@ -32,8 +35,7 @@ class Main extends PluginBase implements Listener {
                 $sender->sendMessage("§cThis command can't be used here!.");
                 return true;
         }
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createSimpleForm(function (Player $sender, $data){
+        $form = new SimpleForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -76,8 +78,7 @@ class Main extends PluginBase implements Listener {
         return true;
     }
     public function group1($sender){
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -138,8 +139,7 @@ $form->setContent($this->getConfig()->get("group1.features"));
 			 }
 	
 	public function vipplusfeatures($sender){
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -156,8 +156,7 @@ $form->setContent($this->getConfig()->get("group2.features"));
     }
 	
 	public function mvpfeatures($sender){
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -174,8 +173,7 @@ $form->setContent($this->getConfig()->get("group3.features"));
     }
 	
 	public function mvpplusfeatures($sender){
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -192,8 +190,7 @@ $form->setContent($this->getConfig()->get("group4.features"));
     }
 	
 	public function goatfeatures($sender){
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -211,8 +208,7 @@ $form->setContent($this->getConfig()->get("group5.features"));
     
     public function group2($sender){
     
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -251,8 +247,7 @@ $form->setContent($this->getConfig()->get("group5.features"));
     
     public function group3($sender){  
       
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -288,9 +283,8 @@ $form->setContent($this->getConfig()->get("group5.features"));
    }
    
         public function group4($sender){
-    
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+		
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
@@ -327,8 +321,7 @@ $form->setContent($this->getConfig()->get("group5.features"));
      
        public function group5($sender){
     
-        $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
-        $form = $api->createModalForm(function (Player $sender, $data){
+        $form = new ModalForm(function (Player $sender, $data) {
             $result = $data;
             if ($result == null) {
             }
