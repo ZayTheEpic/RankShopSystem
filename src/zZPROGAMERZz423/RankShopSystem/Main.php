@@ -12,7 +12,6 @@ use pocketmine\math\Vector3;
 use jojoe77777\FormAPI;
 use pocketmine\Player;
 use pocketmine\Server;
-use RankShopSystem\Main;
 
 class Main extends PluginBase implements Listener {
     
