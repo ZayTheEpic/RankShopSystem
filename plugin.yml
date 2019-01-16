@@ -4,7 +4,7 @@ main: zZPROGAMERZz423\RankShopSystem\Main
 api: [3.0.0, 3.1.0, 4.0.0]
 author: zZPROGAMERZz423 | §eFor issues report by §2Visiting GitHub.com/zZPROGAMERZz423
 
-depend: [PureChat, FormAPI, PurePerms, FormAPI, EconomyAPI]
+depend: [PureChat, PurePerms, EconomyAPI]
 commands:
   rshop:
    description: "A rank shop system established for servers"
