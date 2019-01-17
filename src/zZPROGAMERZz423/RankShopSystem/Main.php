@@ -21,7 +21,7 @@ class Main extends PluginBase implements Listener {
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
 		$this->eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
-		$this->getLogger()->notice("§bRankShop§eSystem §esuccessfully enabled. §aBy zZPROGAMERZz423");
+		$this->getLogger()->notice("RankShopSystem successfully enabled. By zZPROGAMERZz423");
 		
 		@mkdir($this->getDataFolder());
         $this->saveDefaultConfig();
