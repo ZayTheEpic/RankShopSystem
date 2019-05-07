@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace zZPROGAMERZz423\RankShopSystem\libs\jojoe77777\FormAPI;
 
 class SimpleForm extends Form {
+    
     const IMAGE_TYPE_PATH = 0;
     const IMAGE_TYPE_URL = 1;
     /** @var string */
@@ -13,39 +14,46 @@ class SimpleForm extends Form {
     /**
      * @param callable $callable
      */
+    
     public function __construct(?callable $callable) {
         parent::__construct($callable);
         $this->data["type"] = "form";
         $this->data["title"] = "";
         $this->data["content"] = $this->content;
     }
+    
     public function processData(&$data) : void {
         $data = $this->labelMap[$data] ?? null;
     }
+    
     /**
      * @param string $title
      */
     public function setTitle(string $title) : void {
         $this->data["title"] = $title;
     }
+    
     /**
      * @return string
      */
     public function getTitle() : string {
         return $this->data["title"];
     }
+    
     /**
      * @return string
      */
     public function getContent() : string {
         return $this->data["content"];
     }
+    
     /**
      * @param string $content
      */
     public function setContent(string $content) : void {
         $this->data["content"] = $content;
     }
+    
     /**
      * @param string $text
      * @param int $imageType
