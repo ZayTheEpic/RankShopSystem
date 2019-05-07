@@ -4,8 +4,5 @@ branches:
 projects:
   RankShopSystem:
     path: ""
-    icon: RankShopSystem.png
-    libs:
-      - src: jojoe77777/FormAPI/libFormAPI
-        version: ^1.3
+
 ...
