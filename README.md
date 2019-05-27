@@ -1,46 +1,45 @@
 # RankShopSystem
 
-# A rank economy system which players can buy ranks with or with use of in-game money. 
+● A rank economy shop system which players can buy ranks with or with use of in-game money
 
-Partnered by the plugin "EconomyAPI" and "PureChat". It also required a "UI API" or you can use the plugin "FormAPI".
-
-Fully Customizable Text and Messages. All API support from 1.5 to 1.x.
-.
 
 # Features
 
-✓ Fully Customizable Cost
+✔ Customizable Cost ( Customize rank costs on the config.yml )
+✔ Economy Support ( Supports the economy money )
+✔ Permanent Rank Set ( Permanently have the rank when bought l
+✔ No Delay ( No delays when buying ranks )
+✔ Customizable Messages ( Customize messages on the config.yml )
+✔ Customizable Titles ( Customize titles on the config.yml )
+✔ User Interfaced Shop ( User Interfaced Shop )
 
-✓ Sets player rank automatically if bought
+● To-do List
 
-✓ Sets the rank permenantly
+❎ Customizable Ranks Names 
+❎ Add customizable extra commands
+❎ Create custom UI within the plugin
+❎ Remove bunch of useless codes
 
-✓ Customizable Text / Messages
+# Required Plugins
 
-# Commands
+■ EconomyAPI
+■ FormAPI
+■ PureChat
+■ PurePerms
 
-• /ranks
+# Command
 
-• /rshop
+● /rshop ( opens the UI shop )
 
 # How to use
 
-• Upload plugins such as EconomyAPI, FormAPI, Purechat and Pureperms, to make the plugin functions well or stabled.
+• When the plugin and requiremenrs has been installed to your PocketMine Server, do /addgroup ( group1, group2, group3, group 4, and group5.
 
-• Create a group starting with "group1" to "group5". To do that to you must do command /addgroup group1 " with only lowercase 
-letters" In-game or can be on the server cobsole
+• When the groups has been created, you may edit the rank format by doing the command /setformat ( e.g /setformat group1 null VIP {display_name} {msg}. Color code § will work when adding colors to it
 
-• You can customize text messages and titles on thr configuration.yaml or config.yml.
+• After the last 2 steps, you can configure the ranks title, messages, and popups on the config.yml
+and the when done, the shop will now work
 
-# Contact Me
+# Reminder
 
-[DISCORD]
-- zZPROGAMERZz423#8074
-
-# Information
-
-• We do not support any spoons. Anything to do with spoons (Issues or PRs) will be ignored.
-• We are using the libFormAPI, so there is no need to install the FormAPI plugin.
-   ° In other words, you must use the pre-compiled phar from Poggit-CI instead of GitHub.
-   ° If you wish to run it via source, check out DEVirion.
-   
+- This plugin is still under development! Crashes and errors may occur on the server. So please do create an issue to plugin with the error shown on the console for an immidiet fix.
