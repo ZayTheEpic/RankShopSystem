@@ -6,25 +6,37 @@
 # Features
 
 ✔ Customizable Cost ( Customize rank costs on the config.yml )
+
 ✔ Economy Support ( Supports the economy money )
+
 ✔ Permanent Rank Set ( Permanently have the rank when bought l
+
 ✔ No Delay ( No delays when buying ranks )
+
 ✔ Customizable Messages ( Customize messages on the config.yml )
+
 ✔ Customizable Titles ( Customize titles on the config.yml )
+
 ✔ User Interfaced Shop ( User Interfaced Shop )
 
 ● To-do List
 
 ❎ Customizable Ranks Names 
+
 ❎ Add customizable extra commands
+
 ❎ Create custom UI within the plugin
+
 ❎ Remove bunch of useless codes
 
 # Required Plugins
 
 ■ EconomyAPI
+
 ■ FormAPI
+
 ■ PureChat
+
 ■ PurePerms
 
 # Command
