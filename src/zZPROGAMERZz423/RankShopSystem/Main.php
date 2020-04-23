@@ -122,7 +122,7 @@ $form->setContent($this->getConfig()->get("group1.info"));
             }
             switch ($result) {
                     case 1:
-               $sender->sendMessage("§b");
+               
             }
         });
         $form->setTitle("§bFeatures");
@@ -143,7 +143,7 @@ $form->setContent($this->getConfig()->get("group1.features"));
             }
             switch ($result) {
                     case 1:
-               $sender->sendMessage("§a");
+               
                         break;
             }
         });
@@ -177,7 +177,7 @@ $form->setContent($this->getConfig()->get("group3.features"));
             }
             switch ($result) {
                     case 1:
-               $sender->sendMessage("§a");
+              
                         break;
             }
         });
@@ -194,7 +194,7 @@ $form->setContent($this->getConfig()->get("group4.features"));
             }
             switch ($result) {
                     case 1:
-               $sender->sendMessage("§a");
+               
                         break;
             }
         });
@@ -216,7 +216,7 @@ $form->setContent($this->getConfig()->get("group5.features"));
             $cost = $this->getConfig()->get("group2.cost");
             if($coins >= $cost){
                $this->eco->reduceMoney($sender, $cost);
-               $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " . "§r" . " group2");
+               $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "setgroup " . $sender->getName() . " group2");
                $sender->sendMessage($this->getConfig()->get("group2.complete"));
 		    $this->getServer()->dispatchCommand(new ConsoleCommandSender(), "hub");
 		    $this->vipplusfeatures($sender);
