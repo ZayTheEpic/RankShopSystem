@@ -1,5 +1,7 @@
 <?php
+
 namespace zZPROGAMERZz423\RankShopSystem;
+
 use pocketmine\plugin\PluginBase;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
@@ -122,7 +124,7 @@ $form->setContent($this->getConfig()->get("group1.info"));
             }
             switch ($result) {
                     case 1:
-               
+               break;
             }
         });
         $form->setTitle("§bFeatures");
@@ -160,7 +162,7 @@ $form->setContent($this->getConfig()->get("group2.features"));
             }
             switch ($result) {
                     case 1:
-               $sender->sendMessage("§a");
+               
                         break;
             }
         });
