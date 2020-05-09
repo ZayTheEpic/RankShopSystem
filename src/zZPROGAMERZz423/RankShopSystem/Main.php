@@ -12,6 +12,7 @@ use pocketmine\level\sound\AnvilFallSound;
 use pocketmine\level\sound\Sound;
 use pocketmine\math\Vector3;
 use zZPROGAMERZz423\RankShopSystem\libs\jojoe77777\FormAPI\SimpleForm;
+use zZPROGAMERZz423\RankShopSystem\libs\jojoe77777\FormAPI\ModalForm;
 use onebone\economyapi\EconomyAPI;
 use pocketmine\Player;
 use pocketmine\Server;
@@ -41,7 +42,7 @@ class Main extends PluginBase implements Listener {
             }
             switch ($result) {
                     case 0:
-                    $sender->sendMessage("§c");
+                    
                         break;
                     case 1:
                     $this->group1($sender);
