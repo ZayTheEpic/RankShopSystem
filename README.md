@@ -1,23 +1,24 @@
-# RankShopSystem
+## RankShopSystem
 
-● A rank economy shop system which players can buy ranks with or with use of in-game money
+● A configurable rank economy shop system which players can buy ranks with or with use of in-game money 
 
-
+# Update:
+This project has not yet been cancelled, and will still get improvements soon
 # Features
 
-✔ Customizable Cost ( Customize rank costs on the config.yml )
+[x] Customizable Cost ( Customize rank costs on the config.yml )
 
-✔ Economy Support ( Supports the economy money )
+[x] Economy Support ( Supports the economy money )
 
-✔ Permanent Rank Set ( Permanently have the rank when bought l
+[x] Permanent Rank Set ( Permanently have the rank when bought l
 
-✔ No Delay ( No delays when buying ranks )
+[x] No Delay ( No delays when buying ranks )
 
-✔ Customizable Messages ( Customize messages on the config.yml )
+[x] Customizable Messages ( Customize messages on the config.yml )
 
-✔ Customizable Titles ( Customize titles on the config.yml )
+[x] Customizable Titles ( Customize titles on the config.yml )
 
-✔ User Interfaced Shop ( User Interfaced Shop )
+[x] User Interfaced Shop ( User Interfaced Shop )
 
 ● To-do List
 
@@ -41,17 +42,14 @@
 
 # Command
 
-● /rshop ( opens the UI shop )
+● /rshop - opens the rankshop user interface
 
 # How to use
 
-• When the plugin and requiremenrs has been installed to your PocketMine Server, do /addgroup ( group1, group2, group3, group 4, and group5.
+• When the plugin and requirements has been installed to your PocketMine Server, do /addgroup ( group1, group2, group3, group 4, and group5)
 
 • When the groups has been created, you may edit the rank format by doing the command /setformat ( e.g /setformat group1 null VIP {display_name} {msg}. Color code § will work when adding colors to it
 
-• After the last 2 steps, you can configure the ranks title, messages, and popups on the config.yml
-and the when done, the shop will now work
+• After the last two steps, you can configure the rank's title, messages, and popups on the config.yml. After all that, it should be working fine. 
 
-# Reminder
-
-- This plugin is still under development! Crashes and errors may occur on the server. So please do create an issue to plugin with the error shown on the console for an immidiet fix.
+If you still didn't get the tutorial, you can DM me using discord ( ZayDepths#8074 )
